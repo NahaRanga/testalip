@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="logo.png" type="image" sizes="16x16">
+  <title>Lippe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffeea5;
+      padding: 0px;
+    }
+
+    header .container {
+      max-width: 480px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 100px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-left: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    #content {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      flex-direction: column; /* Menampilkan artikel dan aside secara vertikal */
+    }
+
+    article, aside {
+      flex: 1; /* Membuat artikel dan aside memiliki fleksibilitas yang sama */
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* Memberikan jarak antara artikel dan aside */
+    }
+
+    aside {
+      width: 50%; /* Lebar aside */
+      margin: 0 auto; /* Posisikan aside di tengah */
+    }
+
+    aside img {
+      width: 100%; /* Mengatur lebar gambar sesuai dengan lebar aside */
+      height: auto; /* Menyesuaikan tinggi gambar agar tidak terdistorsi */
+      border-radius: 5px; /* Menambahkan border-radius untuk gambar */
+    }
+
+    footer {
+      background-color: #fe9d01;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-media img {
+      size-adjust: 20px;
+      height: 30px;
+    }
+
+    /* Menambahkan gaya untuk banner */
+    #banner {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <h1>Selamat datang di Alip Risqi</h1>
+          <li><a href="#" onclick="window.location.reload(true);">Beranda</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Menambahkan banner gambar di atas article dan aside -->
+    <img id="banner" src="banner.PNG" alt="Banner Image">
+
+    <div id="content">
+      <article>
+        <h1>Konsep</h1>
+        <p>Konsep saya membuat UI & UX ini adalah untuk kedai kopi yang akan mulai melakukan transaksi secara online</p>
+      </article>
+      <article>
+        <h2>Fitur - fitur</h2>
+        <ul>
+          <li>Register</li>
+          <li>Login</li>
+          <li>Pilih menu</li>
+          <li>Pesan menu</li>
+        </ul>
+      </article>
+      <aside>
+        <h3>Portofolio</h3>
+        <img src="alip.webp" alt="Coffee Blend"> <!-- Menambahkan gambar pada aside -->
+        <p>Nama saya Alip risqi dad  wdq wdqq wd qwdq dq dqw dqwd qwdq wd qw dqw d</p>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <div class="social-media">
+      <a href="#"><img src="whatsapp logo.png" alt="whatsapp"></a>
+      <a href="#"><img src="instagram logo.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>
